@@ -17,6 +17,7 @@ endif
 
 augroup filetypedetect
 	au BufRead,BufNewFile *.cginc,*.shader set filetype=c
+	au BufRead,BufNewFile *.asm set filetype=nasm
 augroup END
 
 map <F4> :NERDTreeToggle<CR>
@@ -27,3 +28,4 @@ let NERDTreeQuitOnOpen=1
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 call plug#end()
+
