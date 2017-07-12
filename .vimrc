@@ -3,6 +3,8 @@ set incsearch
 set ic
 syntax on
 set number
+set shiftwidth=4
+set softtabstop=4
 
 if has('win32') || has('win64')
   "set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
@@ -15,10 +17,8 @@ set guioptions-=r
 set guioptions-=L
 endif
 
-augroup filetypedetect
-	au BufRead,BufNewFile *.cginc,*.shader set filetype=c
-	au BufRead,BufNewFile *.asm set filetype=nasm
-augroup END
+au BufRead,BufNewFile *.cginc,*.shader set filetype=c
+au BufRead,BufNewFile *.asm set filetype=nasm
 
 map <F4> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
