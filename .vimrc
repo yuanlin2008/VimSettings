@@ -6,6 +6,10 @@ set number
 set shiftwidth=4
 set softtabstop=4
 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
 if has('win32') || has('win64')
   "set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 color evening
